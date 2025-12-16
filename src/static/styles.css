@@ -155,16 +155,35 @@ footer {
   margin-bottom: 8px;
 }
 
+
 .participants-list {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
   margin: 0;
 }
 
-.participants-list li {
+.participant-item {
+  display: flex;
+  align-items: center;
   margin-bottom: 5px;
   color: #555;
   font-size: 14px;
+}
+
+.participant-name {
+  flex: 1;
+}
+
+.delete-participant {
+  margin-left: 10px;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s;
+  user-select: none;
+}
+.delete-participant:hover {
+  color: #ff1744;
 }
 
 .participants-section p {
